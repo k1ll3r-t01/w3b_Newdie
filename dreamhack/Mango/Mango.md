@@ -2,11 +2,12 @@
 ![alt text](image.png)
 
 Request vào wed ta được url như ảnh khi này thấy hint xuất hiện 
-![alt text](image-1.png)
-Cụm từ "khách" được in ra và có vẻ như đây là thông báo cho bạn biết rằng bạn đã đăng nhập với tư cách là khách.
-
-Vậy nếu thay guest bằng admin thì có điều gì xảy ra không
 ![alt text](image-2.png)
+Cụm từ "khách" được in ra và có vẻ như đây là thông báo cho bạn biết rằng bạn đã đăng nhập với tư cách là khách.
+![alt text](image-3.png)
+Vậy nếu thay guest bằng admin thì có điều gì xảy ra không
+
+![alt text](image-4.png)
 --> Có vẻ như tài khoản admin đã bị lọc
 
 Vậy ta nhận thấy ta cần lọc các chuỗi trong giá trị yêu cầu của khách hàng và tìm kiếm người dùng đáp ứng uid và upw.
