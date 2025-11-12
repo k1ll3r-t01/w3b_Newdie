@@ -5,7 +5,7 @@ import re
 from requests.exceptions import RequestException, ConnectionError
 
 # --- Cấu hình ---
-BASE_URL = "http://host3.dreamhack.games:17278/login"
+BASE_URL = "http://host3.dreamhack.games:24412/login"
 TIMEOUT = 5              # timeout cho mỗi request
 
 # Charset dùng để dò
