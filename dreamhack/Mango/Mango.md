@@ -1,13 +1,20 @@
 **Mango**
-![alt text](image.png)
+
+<img width="552" height="704" alt="image" src="https://github.com/user-attachments/assets/aa51c81c-2f6d-431c-9c90-0a7df8698080" />
+
 
 Request vào wed ta được url như ảnh khi này thấy hint xuất hiện 
-![alt text](image-2.png)
+
+<img width="667" height="218" alt="image" src="https://github.com/user-attachments/assets/c85ba2fd-1362-4038-b1c9-bb7cd865d925" />
+
 Cụm từ "khách" được in ra và có vẻ như đây là thông báo cho bạn biết rằng bạn đã đăng nhập với tư cách là khách.
-![alt text](image-3.png)
+
+<img width="669" height="172" alt="image" src="https://github.com/user-attachments/assets/954caad0-2b55-4b06-b0f9-9b0be9fd8794" />
+
 Vậy nếu thay guest bằng admin thì có điều gì xảy ra không
 
-![alt text](image-4.png)
+<img width="671" height="180" alt="image" src="https://github.com/user-attachments/assets/6b08d01b-d613-45d2-8d56-262b6932ddcd" />
+
 --> Có vẻ như tài khoản admin đã bị lọc
 
 Vậy ta nhận thấy ta cần lọc các chuỗi trong giá trị yêu cầu của khách hàng và tìm kiếm người dùng đáp ứng uid và upw.
@@ -80,5 +87,7 @@ upw bắt đầu DH{8...} → match → result = "{8".
 ... và cứ tiếp tục như vậy cho tới khi tìm hết ...d}.
 
 **Cách cài đặt và ghi chú ở file Mango.py**
-![alt text](image-3.png)
+
+<img width="710" height="276" alt="image" src="https://github.com/user-attachments/assets/b970d9fc-3cb5-4c88-bc43-0e93e5adfd09" />
+
 FLAG: DH{89e50fa6fafe2604e33c0ba05843d3df}
