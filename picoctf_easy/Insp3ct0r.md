@@ -1,13 +1,19 @@
 ## Challenge: Insp3ct0r
 ### Information
-![image][]
+<img width="500" src="https://github.com/user-attachments/assets/5a6a3b27-0ea3-4a05-a2ae-48567c9b4f76" />
+
 ### Hint
 1. How do you inspect web code on a browser?
 2. There's 3 parts
 ### Solution
 Ta thấy trong What có  
+<img width="700" src="https://github.com/user-attachments/assets/e4645e90-5c68-4623-ab0a-e869622ae15c" />
+  
 Tiếp tục trong How có  
+<img width="700" src="https://github.com/user-attachments/assets/6aa0b909-8482-4358-bd25-49cad2d3ee72" />
+  
 Do đó ta cần check code html, css và js để tìm ra 3 phần của flag.  
+  
 Mở "View page source" và ta nhận được phần đầu tiên của flag trong code HTML.  
 ```html
 
@@ -49,6 +55,7 @@ Mở "View page source" và ta nhận được phần đầu tiên của flag tr
   </body>
 </html>
 ```
+  
 Tiếp theo, check `mycss.css` và ta nhận được phần thứ 2 của flag.
 ```css
 div.container {
@@ -103,6 +110,7 @@ p {
 
 /* You need CSS to make pretty pages. Here's part 2/3 of the flag: t3ct1ve_0r_ju5t */
 ```
+  
 Trở về source-view của trang chính và check `myjs.js` ta nhận được phần thứ 3 của flag.
 ```js
 function openTab(tabName,elmnt,color) {
