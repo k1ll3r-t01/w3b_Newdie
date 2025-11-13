@@ -1,5 +1,7 @@
 ## Challenge: Inspect HTML
 ### Information
+<img src="https://github.com/user-attachments/files/23522538/0.md" width="500">
+
 ### Solution
 View page source và ta thấy flag trong code HTML
 ```html
