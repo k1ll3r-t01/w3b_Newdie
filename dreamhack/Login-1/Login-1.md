@@ -5,4 +5,8 @@ Trong hệ thống, có 100 mã dự phòng hợp lệ (từ 0 đến 100). Đi�
 Để vượt qua cơ chế giới hạn số lần đặt lại mật khẩu (resetCount), ta chỉ cần gửi 100 yêu cầu đồng thời, mỗi yêu cầu thử một mã dự phòng khác nhau. Nếu thực hiện đúng thời điểm, server sẽ xử lý nhiều yêu cầu song song trước khi kịp tăng resetCount, và như vậy ta có thể đặt lại mật khẩu thành công.
 
 Ngoài ra, ta còn có một điểm tấn công khác: kiểm tra xem tài khoản nào đang có quyền quản trị qua endpoint /user/<int:useridx>.
-Khi truy cập thử /user/14, tôi phát hiện ra người dùng orange đang sở hữu quyền admin.
+Khi truy cập thử /user/9, tôi phát hiện ra người dùng orange đang sở hữu quyền admin.
+
+<img width="1202" height="430" alt="image" src="https://github.com/user-attachments/assets/48af5feb-4b17-4deb-9e13-4cb788c91864" />
+Đăng nhập bằng mật khẩu mới và truy cập/admin
+Flag: `DH{4b308b526834909157a73567075c9ab7}`
