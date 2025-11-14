@@ -18,9 +18,9 @@ Rõ ràng đây là chuỗi ROT13, giải mã ta được `NOTE: Jack - temporar
 Dùng Burp Suite -> Proxy -> Intercept -> Open Browser -> load trang web từ đề bài và nhập email `ctf-player@picoctf.org` cùng password bất kì  
 <img src="https://github.com/user-attachments/files/23537166/4.md" width="800">
   
-Quay lại Burp Suite, chuyển bật **Intercept**  
+Quay lại Burp Suite, bật **Intercept**  
 Quay lại trình duyệt, nhấn **Log in**  
-Khi này, Burp Suite đã bắt được gói tin **HTTP POST**  
+Khi này, Burp Suite đã bắt được gói tin `HTTP POST`  
 <img src="https://github.com/user-attachments/files/23537176/2.md" width="800">
   
 Chuyển sang Repeater và nhập header `X-Dev-Access: yes`  
