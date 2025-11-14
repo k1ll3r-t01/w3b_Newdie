@@ -1,6 +1,5 @@
 ## Challenge: blind-command
 ### Information:
-<img src="https://github.com/user-attachments/files/23546994/0.md" width="500">
 
 ### Solution
 <img src="https://github.com/user-attachments/files/23547020/1.md" width="700">
