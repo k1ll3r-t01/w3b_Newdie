@@ -37,4 +37,11 @@ http://0x7f000001:1501/flag.txt
 ...
 http://0x7f000001:1800/flag.txt
 `
+<img width="956" height="621" alt="image" src="https://github.com/user-attachments/assets/50219637-6107-4a9a-ae3e-923c770988cc" />
+Sau khi chỉ định ngẫu nhiên một cổng bằng Intruder, tôi đã xác nhận rằng cổng 1558 đưa ra cùng giá trị phản hồi như cổng 8000.
+Chúng ta hãy truy cập cổng 1558 và đọc tệp flag.txt.
+http://0x7f000001:1558/static/dream.png
+<img width="954" height="478" alt="image" src="https://github.com/user-attachments/assets/0c952668-96c9-417d-8816-b5a4467d3b18" />
+
 flag:`DH{43dd2189056475a7f3bd11456a17ad71}`
+
