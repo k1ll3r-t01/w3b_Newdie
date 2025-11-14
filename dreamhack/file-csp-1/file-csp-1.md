@@ -164,17 +164,17 @@ Giải pháp:
 1. Copy nội dung script 4
 2. Tính SHA256 base64
 3. Cho phép hash này trong CSP
-
+Tool: https://centralcsp.com/features/hashes
 → Từ writeup gốc và các thử đề, hash của script thứ 4 là:
 
 ```
-sha256-PQLaU1NnXULICwhf66A7JmPBvD6XPUT6UNtatyBV2r8=
+sha256-l1OSKODPRVBa1/91J7WfPisrJ6WCxCRnKFzXaOkpsY4=
 ```
 
 Do đó CSP hoàn chỉnh:
 
 ```
-script-src 'sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=' 'sha256-PQLaU1NnXULICwhf66A7JmPBvD6XPUT6UNtatyBV2r8=';
+script-src 'sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=' 'sha256-l1OSKODPRVBa1/91J7WfPisrJ6WCxCRnKFzXaOkpsY4=';
 ```
 
 ---
@@ -184,7 +184,7 @@ script-src 'sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=' 'sha256-PQLaU1N
 Gửi CSP:
 
 ```
-script-src 'sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=' 'sha256-PQLaU1NnXULICwhf66A7JmPBvD6XPUT6UNtatyBV2r8=';
+script-src 'sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=' 'sha256-l1OSKODPRVBa1/91J7WfPisrJ6WCxCRnKFzXaOkpsY4=';
 ```
 
 Bot sẽ:
@@ -195,7 +195,8 @@ Bot sẽ:
 * Allow script c() → OK
 
 Điều kiện khớp → **trả flag**.
-
----
+<img width="1044" height="550" alt="image" src="https://github.com/user-attachments/assets/5d3a52b9-4113-4b5a-a840-d80041731fe8" />
+Flag:
+DH{csp-is-good_XD}
 
 
